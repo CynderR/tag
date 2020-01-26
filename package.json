@@ -5,10 +5,11 @@
   "author": "Jason de Belle",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev": "npm run nuxt",
     "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
+    "start": "cross-env NODE_ENV=production node server/index.mjs",
     "generate": "nuxt generate",
+    "nuxt": "nuxt",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "heroku-postbuild": "npm run build"
   },
@@ -21,7 +22,7 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "mongoose": "^5.7.11",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
